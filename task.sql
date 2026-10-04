@@ -49,14 +49,9 @@ create table Users(
 );
 --rollback DROP TABLE Users;
 
---changeset maksym:tag-0.0.2
---tagDatabase: 0.0.2
 
 
 --changeset maksym:6 labels:0.0.3
 
 create index Email on Users (Email);
 --rollback alter table Users drop index Email;
-
---changeset maksym:tag-0.0.3
---tagDatabase: 0.0.3
