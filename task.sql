@@ -41,10 +41,10 @@ CREATE TABLE ProductInventory (
 
 --changeset maksym:5 labels:0.0.2
 
-create tables Users(
+create table Users(
     ID int primary key auto_increment not null,
-    FirstName VARCHAR(50)
-    LastName VARCHAR(50)
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
     Email VARCHAR(50)
 );
 --rollback DROP TABLE Users;
